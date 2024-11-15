@@ -89,7 +89,7 @@ export class NgxContentComponent implements AfterViewInit, OnDestroy {
     ];
   }
 
-  #getParent(element: Element): Node {
+  #getParent(element: Element): ParentNode {
     const node = element.parentNode;
     if (!node) {
       throw new Error(
