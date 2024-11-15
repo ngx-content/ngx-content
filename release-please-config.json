@@ -1,8 +1,9 @@
 {
-  "manifest": true,
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "include-v-in-tag": true,
   "packages": {
-    "projects/ngx-content": {
-      "package-name": "ngx-content",
+    "ngx-content": {
+      "path": "projects/ngx-content",
       "release-type": "node"
     }
   }
