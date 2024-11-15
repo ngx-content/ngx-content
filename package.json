@@ -1,16 +1,10 @@
 {
-  "name": "ngx-content",
-  "private": true,
-  "version": "1.0.0",
-  "scripts": {
-    "build": "ng build",
-    "format:check": "prettier --check \"**/*.{ts,js,json,css,scss,html,md}\"",
-    "format": "prettier --write \"**/*.{ts,js,json,css,scss,html,md}\"",
-    "lint": "ng lint",
-    "ng": "ng",
-    "start": "ng serve",
-    "test": "ng test",
-    "watch": "ng build --watch --configuration development"
+  "author": {
+    "name": "Zygimantas",
+    "url": "https://zygimantas.com"
+  },
+  "bugs": {
+    "url": "https://github.com/ngx-content/ngx-content/issues"
   },
   "dependencies": {
     "@angular/animations": "^18.0.0",
@@ -25,27 +19,44 @@
     "tslib": "^2.3.0",
     "zone.js": "^0.14.10"
   },
+  "description": "NGX Content",
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.0.0",
     "@angular/cli": "^18.0.0",
     "@angular/compiler-cli": "^18.0.0",
-    "@types/jasmine": "^5.1.0",
+    "@types/jest": "^29.5.14",
     "@typescript-eslint/eslint-plugin": "^8.10.0",
     "@typescript-eslint/parser": "^8.10.0",
     "angular-eslint": "^18.0.0",
     "eslint": "^9.13.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "jasmine-core": "^5.2.0",
-    "karma": "^6.4.0",
-    "karma-chrome-launcher": "^3.2.0",
-    "karma-coverage": "^2.2.0",
-    "karma-jasmine": "^5.1.0",
-    "karma-jasmine-html-reporter": "^2.1.0",
+    "jest": "^29.7.0",
+    "jest-preset-angular": "^14.3.0",
     "ng-packagr": "^18.2.0",
     "prettier": "^3.3.3",
     "release-please": "^16.15.0",
+    "ts-jest": "^29.2.5",
     "typescript": "^5.5.2",
     "typescript-eslint": "^8.14.0"
-  }
+  },
+  "homepage": "https://github.com/ngx-content/ngx-content",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngx-content/ngx-content.git"
+  },
+  "scripts": {
+    "build": "ng build",
+    "format:check": "prettier --check \"**/*.{ts,js,json,css,scss,html,md}\"",
+    "format": "prettier --write \"**/*.{ts,js,json,css,scss,html,md}\"",
+    "lint": "ng lint",
+    "ng": "ng",
+    "start": "ng serve",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "watch": "ng build --watch --configuration development"
+  },
+  "name": "ngx-content",
+  "private": true,
+  "version": "1.0.0"
 }

@@ -28,13 +28,6 @@
             "eslintConfig": "projects/ngx-content/eslint.config.js",
             "lintFilePatterns": ["projects/ngx-content/**/*.ts", "projects/ngx-content/**/*.html"]
           }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "polyfills": ["zone.js", "zone.js/testing"],
-            "tsConfig": "projects/ngx-content/tsconfig.spec.json"
-          }
         }
       },
       "prefix": "ngx",
