@@ -1,0 +1,9 @@
+{
+  "manifest": true,
+  "packages": {
+    "projects/ngx-content": {
+      "package-name": "ngx-content",
+      "release-type": "node"
+    }
+  }
+}

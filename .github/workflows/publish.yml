@@ -1,0 +1,39 @@
+name: Publish
+on:
+  push:
+    branches:
+      - main
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Release Please
+        uses: googleapis/release-please-action@v4
+        id: release
+        with:
+          release-type: node
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        if: ${{ steps.release.outputs.release_created }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.x"
+          registry-url: "https://registry.npmjs.org"
+        if: ${{ steps.release.outputs.release_created }}
+
+      - name: Install dependencies
+        run: npm ci
+        if: ${{ steps.release.outputs.release_created }}
+
+      - name: Build package
+        run: npm run build ngx-content
+        if: ${{ steps.release.outputs.release_created }}
+
+      - name: Publish to npmjs.com
+        run: cd dist/ngx-content && npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        if: ${{ steps.release.outputs.release_created }}
