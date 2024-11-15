@@ -1,7 +1,7 @@
 {
   "name": "ngx-content",
   "private": true,
-  "version": "1.13.0",
+  "version": "1.0.0",
   "scripts": {
     "build": "ng build",
     "format:check": "prettier --check \"**/*.{ts,js,json,css,scss,html,md}\"",
