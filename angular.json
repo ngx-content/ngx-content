@@ -1,9 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "schematicCollections": [
-      "@angular-eslint/schematics"
-    ]
+    "schematicCollections": ["@angular-eslint/schematics"]
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -28,10 +26,7 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "eslintConfig": "projects/ngx-content/eslint.config.js",
-            "lintFilePatterns": [
-              "projects/ngx-content/**/*.ts",
-              "projects/ngx-content/**/*.html"
-            ]
+            "lintFilePatterns": ["projects/ngx-content/**/*.ts", "projects/ngx-content/**/*.html"]
           }
         }
       },
@@ -48,14 +43,13 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngx-content-demo",
+            "baseHref": "/ngx-content/",
+            "outputPath": "docs",
             "index": "projects/ngx-content-demo/src/index.html",
-            "browser": "projects/ngx-content-demo/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "main": "projects/ngx-content-demo/src/main.ts",
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/ngx-content-demo/tsconfig.app.json",
             "assets": [
               {
@@ -63,9 +57,7 @@
                 "input": "projects/ngx-content-demo/public"
               }
             ],
-            "styles": [
-              "projects/ngx-content-demo/src/styles.css"
-            ],
+            "styles": ["projects/ngx-content-demo/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -110,10 +102,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/ngx-content-demo/tsconfig.spec.json",
             "assets": [
               {
@@ -121,9 +110,7 @@
                 "input": "projects/ngx-content-demo/public"
               }
             ],
-            "styles": [
-              "projects/ngx-content-demo/src/styles.css"
-            ],
+            "styles": ["projects/ngx-content-demo/src/styles.css"],
             "scripts": []
           }
         },
