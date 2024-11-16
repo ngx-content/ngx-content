@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.0](https://github.com/ngx-content/ngx-content/compare/ngx-content-v1.3.0...ngx-content-v1.4.0) (2024-11-16)
+
+
+### Features
+
+* add ([260903f](https://github.com/ngx-content/ngx-content/commit/260903f638d4770b89ae2fa49569bc5e6aa3ba93))
+* add ([e71990f](https://github.com/ngx-content/ngx-content/commit/e71990f341997b2959a66fb1b0aa6f14481a800c))
+
 ## [1.3.0](https://github.com/ngx-content/ngx-content/compare/ngx-content-v1.2.0...ngx-content-v1.3.0) (2024-11-16)
 
 
