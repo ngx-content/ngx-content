@@ -121,7 +121,8 @@ export class NgxContentComponent implements AfterViewInit {
         break;
       }
       case 'self': {
-        parent.replaceChild(newChild, refChild);
+        this.#renderer.removeChild(parent, refChild);
+        this.#renderer.appendChild(parent, newChild);
         break;
       }
       default: {
