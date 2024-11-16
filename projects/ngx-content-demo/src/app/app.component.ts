@@ -26,9 +26,13 @@ import { ButtonComponent } from './components/button.component';
       </template>
     </ngx-content>
 
-    <ngx-content select="#c" place="self">
+    <ngx-content select="#c" place="self" (placed)="placed()">
       <app-button>click</app-button>
     </ngx-content>
   `,
 })
-export class AppComponent {}
+export class AppComponent {
+  placed(): void {
+    console.log('Placed');
+  }
+}

@@ -41,10 +41,6 @@ describe('NgxContentComponent', () => {
     fixture.detectChanges();
   });
 
-  afterEach(() => {
-    component.ngOnDestroy();
-  });
-
   it('should create the component', () => {
     expect(component).toBeTruthy();
   });
