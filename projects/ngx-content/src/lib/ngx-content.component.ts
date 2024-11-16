@@ -167,21 +167,3 @@ export class NgxContentComponent implements AfterViewInit, OnDestroy {
     this.placed.emit();
   }
 }
-
-@Component({
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  encapsulation: ViewEncapsulation.None,
-  selector: 'ngx-content-enc-none',
-  standalone: true,
-  template: '<ng-content />',
-})
-export class NgxContentEncNoneComponent extends NgxContentComponent {}
-
-@Component({
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  encapsulation: ViewEncapsulation.ShadowDom,
-  selector: 'ngx-content-enc-shadowdom',
-  standalone: true,
-  template: '<ng-content />',
-})
-export class NgxContentEncShadowDomComponent extends NgxContentComponent {}
