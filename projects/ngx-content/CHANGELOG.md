@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/ngx-content/ngx-content/compare/ngx-content-v1.4.0...ngx-content-v1.5.0) (2024-11-17)
+
+
+### Features
+
+* add readme ([23697c1](https://github.com/ngx-content/ngx-content/commit/23697c1ee2871962c85aff7f15d261ce622c223c))
+
 ## [1.4.0](https://github.com/ngx-content/ngx-content/compare/ngx-content-v1.3.0...ngx-content-v1.4.0) (2024-11-16)
 
 
